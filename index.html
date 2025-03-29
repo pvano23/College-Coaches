@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <!---created by Paige Van Overberghe on March 29--->  
+
+<title>College Coaches</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto|Oswald:400,700,900|Didact Gothic" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  padding: 20px;
+  
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 { 
+  font-family: 'Oswald';
+  font-size: 50px;
+  word-break: break-all;
+}
+
+h2 {
+  font-family: 'Didact Gothic';
+  font-size: 18px;
+  word-break: break-all;
+}
+
+h4 {
+  font-family: 'Oswald';
+  font-size: 18px;
+  color: white;
+  word-break: break-all;
+  margin-left: 30px;
+
+}
+
+.row {
+  margin: 0px; /* Add vertical spacing between rows */
+}
+
+/* Add padding BETWEEN each column */
+.row > .column {
+  padding: 8px; /* Padding for separation within the row */
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #A7ABAA;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color:  #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #A7ABAA;
+}
+
+.btn.active {
+  font-family: 'Didact Gothic';
+  font-size: 14px;
+  background-color: #666;
+  color: white;
+}
+
+.btn.style {
+  font-family: 'Didact Gothic';
+  font-size: 14px;
+  background-color: #f1f1f1A;
+  color: black;
+}
+
+.show {
+  display: block;
+}
+
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MY NETWORK</h1>
+<hr>
+
+<h2>The programs listed below have a coach or recruiter on staff who receives my scouting reports and prospect boards. <br>However, I want to clarify that I am not claiming any affiliation with the school or the coach.</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn style" onclick="filterSelection('NCAA D1 FBS')"> NCAA D1 FBS</button>
+  <button class="btn style" onclick="filterSelection('NCAA D1 FCS')"> NCAA D1 FCS</button>
+  <button class="btn style" onclick="filterSelection('NCAA D2')"> NCAA D2</button>
+  <button class="btn style" onclick="filterSelection('U_SPORTS_CANADA')"> U SPORTS CANADA</button>
+  <button class="btn style" onclick="filterSelection('NCAA_D3')"> NCAA D3</button>
+  <button class="btn style" onclick="filterSelection('CJFL_SCHOOLS')"> CJFL SCHOOLS</button>
+  <button class="btn style" onclick="filterSelection('JUCO')"> JUCO</button>
+  <button class="btn style" onclick="filterSelection('NAIA_SCHOOLS')"> NAIA SCHOOLS</button>
+
+<!-- NCAA D1 FBS -->
+<div class="row">
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Texas Tech Logo" style="width:100%">
+      <h4>TEXAS TECH
+</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="University of buffalo 
+Logo" style="width:100%">
+      <h4>UNIVERSITY OF BUFFALO 
+</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="University of Hawaii 
+Logo" style="width:100%">
+      <h4>UNIVERSITY OF HAWAII 
+</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="
+Michigan State Logo" style="width:100%">
+      <h4>MICHIGAN STATE
+</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Clemson Univeristy Logo" style="width:100%">
+      <h4>CLEMSON UNIVERSITY</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Troy University Logo" style="width:100%">
+      <h4>TROY UNIVERSITY</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Stanford Logo" style="width:100%">
+      <h4>STANDFORD UNIVERSITY</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="BYU Logo" style="width:100%">
+      <h4>BYU</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="UMASS Logo" style="width:100%">
+      <h4>UMASS</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="SMU Logo" style="width:100%">
+      <h4>SMU</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Eastern Michigan Logo" style="width:100%">
+      <h4>EASTERN MICHIGAN</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Syracuse University Logo" style="width:100%">
+      <h4>SYRACUSE UNIVERISTY</h4>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Oregon state
+Logo" style="width:100%">
+      <h4>ORGEON STATE</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Memphis Logo" style="width:100%">
+      <h4>MEMPHIS</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="UAB logo" style="width:100%">
+      <h4>UAB</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="UTEP Logo" style="width:100%">
+      <h4>UTEP</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="UNC Logo" style="width:100%">
+      <h4>UNC</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Alabama Logo" style="width:100%">
+      <h4>ALABAMA</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Oklahoma State
+" style="width:100%">
+      <h4>OKLAHOMA STATE</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Ole Miss Logo" style="width:100%">
+      <h4>OLE MISS</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Boise State Logo" style="width:100%">
+      <h4>BOISE STATE
+</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="New Mexico State Logo
+" style="width:100%">
+      <h4>NEW MEXICO STATE</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Oregon Logo" style="width:100%">
+      <h4>OREGON</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Bowling Green Logo" style="width:100%">
+      <h4>BOWLING GREEN</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="UNLV Logo" style="width:100%">
+      <h4>UNLV</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Tulane Logo" style="width:100%">
+      <h4>TULANE</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Kansas Logo" style="width:100%">
+      <h4>KANSAS</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Old Dominion Logo
+" style="width:100%">
+      <h4>OLD DOMINION</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="UCONN Logo" style="width:100%">
+      <h4>UCONN</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Tennessee Logo" style="width:100%">
+      <h4>TENNESSE</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Iowa Logo" style="width:100%">
+      <h4>IOWA</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Temple Logo" style="width:100%">
+      <h4>TEMPLE</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FBS">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Central Michigan
+Logo" style="width:100%">
+      <h4>CENTRAL MICHIGAN</h4>
+    </div>
+  </div>
+</div>
+
+<!--  NCAA D1 FCS -->
+
+<div class="row">
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Presbyterian College
+ Logo" style="width:100%">
+      <h4>PRESBYTERIAN COLLEGE
+</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Cornell  
+Logo" style="width:100%">
+      <h4>CORNELL
+</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Western Carolina
+Logo" style="width:100%">
+      <h4>WESTERN CAROLINA
+</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/cars1.jpg" alt="Yale Logo" style="width:100%">
+      <h4>YALE UNIVERSITY</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/cars2.jpg" alt="Bryant Logo" style="width:100%">
+      <h4>BRYANT</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/cars3.jpg" alt="Southern Illinois Carbondale Logo" style="width:100%">
+      <h4>SOUTHERN ILLINOIS CARBONDALE</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/cars1.jpg" alt="South Dakota State Univeristy Logo" style="width:100%">
+      <h4>SOUTH DAKOTA STATE UNIVERSITY</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/cars2.jpg" alt="Harvard Univeristy Logo" style="width:100%">
+      <h4>HARVARD UNIVERSITY</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/cars3.jpg" alt="University of IDAHO" style="width:100%">
+      <h4>UNIVERSITY OF IDAHO</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/cars1.jpg" alt="Valparaiso University Logo" style="width:100%">
+      <h4>VALPARAISO UNIVERSITY
+</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/cars2.jpg" alt="Villanova Logo" style="width:100%">
+      <h4>VILLANOVA</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/cars3.jpg" alt="North Dakota State University" style="width:100%">
+      <h4>NORTH DAKOTA STATE UNIVERSITY</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="William & Mary
+ Logo" style="width:100%">
+      <h4>WILLIAM & MARY
+</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Butler University
+Logo" style="width:100%">
+      <h4>BUTLER UNIVERSITY
+</h4>
+    </div>
+  </div>
+<div class="row">
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Tennessee Tech
+ Logo" style="width:100%">
+      <h4>TENNESSE TECH
+</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Fordham  
+Logo" style="width:100%">
+      <h4>FORDHAM
+</h4>
+    </div>
+  </div>
+  <div class="row">
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="University of Montana
+ Logo" style="width:100%">
+      <h4>UNIVERSITY OF MONTANA
+</h4>
+    </div>
+  </div>
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Georgia State
+
+Logo" style="width:100%">
+      <h4>GEORGIA STATE
+</h4>
+    </div>
+  </div>
+  <div class="row">
+  <div class="column NCAA D1 FCS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Drake University
+ Logo" style="width:100%">
+      <h4>DRAKE UNIVERSITY
+</h4>
+    </div>
+  </div>
+
+<!-- NCAA D2 -->
+<div class="row">
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="Lenoir Rhyne LOGO
+" style="width:100%">
+      <h4>LENOIR RHYNE</h4>
+    </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="Albany Logo" style="width:100%">
+      <h4>ALBANY</h4>
+    </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="South Dakota Mines Logo
+" style="width:100%">
+      <h4>SOUTH DAKOTA MINES</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="CSS Pueblo Logo" style="width:100%">
+      <h4>CSS PUEBLO</h4>
+    </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="Michigan Tech Logo
+" style="width:100%">
+      <h4>MICHIGAN TECH</h4>
+    </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="Northwood Logo" style="width:100%">
+      <h4>NORTHWOOD</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="Western New Mexico Logo
+" style="width:100%">
+      <h4>WESTERN NEW MEXICO</h4>
+    </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="Winona State Logo" style="width:100%">
+      <h4>WINONA STATE</h4>
+    </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="pace University Logo" style="width:100%">
+      <h4>PACE UNIVERSITY</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="Anderson University Logo
+" style="width:100%">
+      <h4>ANDERSON UNIVERSITY</h4>
+    </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="Lincoln University HBCU Logo
+" style="width:100%">
+      <h4>LINCOLN UNIVERSITY HBCU </h4>
+    </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="Seton Hill Logo
+" style="width:100%">
+      <h4>SETON HILL</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="East Central University Logo" style="width:100%">
+      <h4>EAST CENTRAL UNIVERSITY</h4>
+    </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="Saint Anselm
+Logo" style="width:100%">
+      <h4>SAINT ANSELM</h4>
+    </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="
+Arkansas Tech Logo" style="width:100%">
+      <h4>ARKANSAS TECH</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="Minot State
+Logo" style="width:100%">
+      <h4>MINOT STATE</h4>
+    </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="Washburn Logo" style="width:100%">
+      <h4>WASHBURN</h4>
+    </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="
+West Virginia Wesleyan College Logo" style="width:100%">
+      <h4>WEST VIRGINIA WESLEYAN COLLEGE</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="Kentucky Wesleyan Logo
+" style="width:100%">
+      <h4>KENTUCKY WESLEYAN</h4>
+    </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="
+Lincoln University Missouri Logo" style="width:100%">
+      <h4>LINCOLN UNIVERSITY MISSOURI</h4>
+    </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="
+Central University Missouri Logo" style="width:100%">
+      <h4>CENTRAL UNIVERSITY MISSOURI</h4>
+    </div>
+  </div>
+</div>
+ </div>
+  </div>
+  <div class="column NCAA D2">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="American International College Logo" style="width:100%">
+      <h4>AMERICAN INTERNATIONAL COLLEGE</h4>
+    </div>
+  </div>
+</div>
+
+<!-- U SPORTS -->
+<div class="row">
+  <div class="column U_SPORTS_CANADA">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="University of Windsor Logo" style="width:100%">
+      <h4>UNIVERSITY OF WINDSOR</h4>
+    </div>
+  </div>
+  <div class="column U_SPORTS_CANADA">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Wilfrid Laurier University Logo" style="width:100%">
+      <h4>WILFRID LAURIER UNIVERSITY</h4>
+    </div>
+  </div>
+  <div class="column U_SPORTS_CANADA">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Carleton University Logo" style="width:100%">
+      <h4>CARLETON UNIVERSITY</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column U_SPORTS_CANADA">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="University of Ottawa Logo" style="width:100%">
+      <h4>UNIVERSITY OF OTTAWA</h4>
+    </div>
+  </div>
+  <div class="column U_SPORTS_CANADA">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="University of Guelph Logo" style="width:100%">
+      <h4>UNIVERSITY OF GUELPH</h4>
+    </div>
+  </div>
+  <div class="column U_SPORTS_CANADA">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Bishop's University Logo" style="width:100%">
+      <h4>BISHOP'S UNIVERSITY</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column U_SPORTS_CANADA">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="St. Francis Xavier University Logo" style="width:100%">
+      <h4>ST. FX</h4>
+    </div>
+  </div>
+  <div class="column U_SPORTS_CANADA">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Acadia University Logo" style="width:100%">
+      <h4>ACADIA UNIVERSITY</h4>
+    </div>
+  </div>
+  <div class="column U_SPORTS_CANADA">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="University of Regina Logo" style="width:100%">
+      <h4>UNIVERSITY OF REGINA</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column U_SPORTS_CANADA">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Western University Logo" style="width:100%">
+      <h4>WESTERN UNIVERSITY</h4>
+    </div>
+  </div>
+  <div class="column U_SPORTS_CANADA">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="York University Logo" style="width:100%">
+      <h4>YORK UNIVERSITY</h4>
+    </div>
+  </div>
+  <div class="column U_SPORTS_CANADA">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="McGill University Logo" style="width:100%">
+      <h4>MCGILL UNIVERSITY</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column U_SPORTS_CANADA">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="University of Manitoba Logo" style="width:100%">
+      <h4>UNIVERSITY OF MANITOBA</h4>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- NCAA D3 -->
+<div class="row">
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="University of Rochester Logo" style="width:100%">
+      <h4>UNIVERSITY OF ROCHESTER</h4>
+    </div>
+  </div>
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="University of Wisconsin Eau Claire Logo" style="width:100%">
+      <h4>WISCONSIN EAU CLAIRE</h4>
+    </div>
+  </div>
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="New England College Logo" style="width:100%">
+      <h4>NEW ENGLAND COLLEGE</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Bethany College Logo" style="width:100%">
+      <h4>BETHANY COLLEGE</h4>
+    </div>
+  </div>
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Alfred University Logo" style="width:100%">
+      <h4>ALFRED UNIVERSITY</h4>
+    </div>
+  </div>
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Coe College Logo" style="width:100%">
+      <h4>COE COLLEGE</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Widener University Logo" style="width:100%">
+      <h4>WIDENER UNIVERSITY</h4>
+    </div>
+  </div>
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Linfield University Logo" style="width:100%">
+      <h4>LINFIELD UNIVERSITY</h4>
+    </div>
+  </div>
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Willamette University Logo" style="width:100%">
+      <h4>WILLAMETTE UNIVERSITY</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Kenyon College Logo" style="width:100%">
+      <h4>KENYON COLLEGE</h4>
+    </div>
+  </div>
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Kalamazoo College Logo" style="width:100%">
+      <h4>KALAMAZOO COLLEGE</h4>
+    </div>
+  </div>
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Muhlenberg College Logo" style="width:100%">
+      <h4>MUHLENBERG COLLEGE</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Carthage College Logo" style="width:100%">
+      <h4>CARTHAGE COLLEGE</h4>
+    </div>
+  </div>
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Ithaca College Logo" style="width:100%">
+      <h4>ITHACA COLLEGE</h4>
+    </div>
+  </div>
+  <div class="column NCAA_D3">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Concordia University Chicago Logo" style="width:100%">
+      <h4>CONCORDIA UNIVERSITY CHICAGO</h4>
+    </div>
+  </div>
+</div>
+
+
+<!-- CJFL SCHOOLS -->
+<div class="row">
+  <div class="column CJFL_SCHOOLS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="St. Clair College Logo" style="width:100%">
+      <h4>ST. CLAIR COLLEGE</h4>
+    </div>
+  </div>
+  <div class="column CJFL_SCHOOLS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Ottawa Sooners Logo" style="width:100%">
+      <h4>OTTAWA SOONERS</h4>
+    </div>
+  </div>
+  <div class="column CJFL_SCHOOLS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Kamloops Broncos Logo" style="width:100%">
+      <h4>KAMLOOPS BRONCOS</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column CJFL_SCHOOLS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Prince George Kodiaks Logo" style="width:100%">
+      <h4>PRINCE GEORGE KODIAKS</h4>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- JUCO -->
+
+<div class="row">
+  <div class="column JUCO_SCHOOLS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Garden City College Logo" style="width:100%">
+      <h4>GARDEN CITY COLLEGE</h4>
+    </div>
+  </div>
+</div>
+
+<!-- NAIA SCHOOLS -->
+<h2>NAIA SCHOOLS</h2>
+<div class="row">
+  <div class="column NAIA_SCHOOLS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="McPherson College Logo" style="width:100%">
+      <h4>MCPHERSON COLLEGE</h4>
+    </div>
+  </div>
+  <div class="column NAIA_SCHOOLS">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Arizona Christian University Logo" style="width:100%">
+      <h4>ARIZONA CHRISTIAN UNIVERSITY</h4>
+    </div>
+  </div>
+</div>
+
+<!-- END MAIN -->
+
+<script>
+filterSelection("all");
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
