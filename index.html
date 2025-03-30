@@ -105,24 +105,45 @@ body {
   background-color: gold;
 }
 
-        .rks {
-        position: absolute;
-        bottom: 120px;
-        left: 30px;
-        height: 90px;
-        width: auto;
-        }
+ .rks {
+  bottom: 10px;
+  left: 30px;
+  height: 90px;
+  width: auto;      /* Keep aspect ratio */
+  max-width: 100%;   /* Ensure it shrinks to fit within the container */
+}
+
       
+.logo-image {
+  height: 90px;      
+  width: auto;       margin-bottom: 200px;
+}
+
   
 .laptop-image {
             position: absolute;
             height: 250px; /* Adjust height as needed */
             width: auto; /* Maintain aspect ratio */
             bottom: 540px;
-           left: 775px;
+           left: 920px;
             
         }
       
+          .x {
+            position: absolute;
+            top: 80px; 
+            left: 1300px;
+            height: 40px;
+            width: auto;
+        }
+        
+        .ig {
+            position: absolute;
+            top: 80px;
+            left: 1220px;
+            height: 40px;
+            width: auto;
+        }
   
 /* Center website */
 .main {
@@ -235,8 +256,17 @@ h4 {
 
 <div class="container">
    
+<a href="https://x.com/renkokscouting?lang=en" target="_blank">
+            <img src="X LOGO.png" alt="X Social Media Logo" class="x">
+        </a>
+        <a href="https://www.instagram.com/renkokscouting/" target="_blank">
+            <img src="Instagram LOGO.png" alt="Instagram Social Media Logo" class="ig">
+        </a> 
 
     <div class="navbar">
+      
+      <img src="RKS LOGO.png" alt="Ren Kok Scouting Logo" class="logo-image">
+      
         <ul>
             <li><a href="#home">HOME</a></li>
             <li class="dropdown">
@@ -260,7 +290,7 @@ h4 {
     </div>
 </div>
 
-<img src="RKS Laptop.png" alt="RKS Laptop" class="laptop-image"> 
+
   
 <img src="RKS Laptop.png" alt="RKS Laptop" class="laptop-image">
   
