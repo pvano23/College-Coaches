@@ -27,24 +27,26 @@ body {
 
 .container {
   width: 99%;
-  height: 10%;
+  height: 85%;  /* Subtract the navbar height to adjust the container height */
   border: 2px solid blue; 
   position: relative;
   display: flex;
-  flex-direction: column;  /* Ensure content is stacked vertically */
-  padding: 120px; /* Add padding for better spacing */
+  flex-direction: column;
+  padding: 120px 0 0 0; /* Add top padding if necessary, but don't affect bottom */
 }
 
 .navbar {
-  width: 111%;  /* Ensure navbar spans the full width */
-  height: 78px;
-  background-color: black;
+  width: 100%;  /* Ensure navbar spans the full width */
+  height: 65px;
+  background-color: red;
   position: static; /* Keep the navbar static inside the container */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3;  /* Keep it above other content, though it's not necessary with static positioning */
+  z-index: 3;
+  margin-top: 40px;  /* Adjust the space above the navbar */
 }
+
 
 .navbar ul {
   list-style-type: none; 
@@ -103,8 +105,7 @@ body {
   background-color: gold;
 }
 
-
-    
+  
 /* Center website */
 .main {
   max-width: 1000px;
