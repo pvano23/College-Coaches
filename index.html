@@ -41,18 +41,18 @@ body {
   background-color: black;
   position: static; /* Keep the navbar static inside the container */
   display: flex;
-  justify-content: center;
+  justify-content: center;  /* Keeps the navbar items centered */
   align-items: center;
   z-index: 3;
   margin-top: 40px;  /* Adjust the space above the navbar */
 }
 
-
 .navbar ul {
   list-style-type: none; 
   margin: 0; 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;  /* Shift navbar items to the left */
+  width: 100%;  /* Ensure it spans the full width */
 }
 
 .navbar a {
@@ -63,6 +63,7 @@ body {
   text-decoration: none;
   transition: background-color 0.2s;
 }
+
 
 .dropdown {
   position: relative; 
