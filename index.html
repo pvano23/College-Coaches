@@ -12,15 +12,99 @@
 <style>
 * {
   box-sizing: border-box;
+ 
 }
 
 body {
   background-color: white;
   padding: 20px;
+  margin-top: 0px;
+
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
   
 }
 
+           .container {
+            width: 99%;
+            position: relative;
+            display: flex;
+            margin-top: 2%;
+        }
+
+        .navbar {
+            width: 99%;
+            height: 60px; /* Set a fixed height */
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .navbar ul {
+            list-style-type: none; 
+            margin: 0; 
+            padding: 28px; 
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            color: white; 
+            padding: 28px 50px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        
+        .dropdown {
+            position: relative; 
+        }
+        
+        .dropdown-content {
+            display: none; 
+            background-color: #f9f9f9; 
+            box-shadow: 0px 8px 16px 0px; 
+            flex-direction: column; 
+            align-items: center; /* Center items horizontally */
+            text-align: center; /* Center text within the items */
+            position: absolute;
+            left: 50%; /* Center the dropdown */
+            transform: translateX(-50%); /* Adjust for centering */
+            z-index: 1; /* Keeps it above other content */
+            width: 100%; /* Make dropdown width same as the button */
+            max-width: 300px; /* Set a maximum width if needed */
+        }
+      
+        .dropdown:hover  .dropdown-content {
+            display: block; /* Show dropdown on hover */
+        }
+        
+        .dropdown-content a {
+            font-size: 16px;
+            color: black; /* Text color for dropdown links */
+            padding: 16px 0px; /* Padding for dropdown links */
+            text-decoration: none; /* Remove underline */
+            display: block; /* Display links as block elements */
+            margin-top: 12px;
+        }
+        
+        .navbar a:hover {
+            background-color: #A7ABAA;
+            color: black;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: gold; 
+        }
   
+  
+      
+    
 /* Center website */
 .main {
   max-width: 1000px;
@@ -127,6 +211,117 @@ h4 {
 </head>
 <body>
 
+<!-- Nav Bar -->
+
+<div class="container">
+    <a href="https://x.com/renkokscouting?lang=en" target="_blank">
+        <img src="X LOGO.png" alt="X Social Media Logo" class="x">
+    </a>
+    <a href="https://www.instagram.com/renkokscouting/" target="_blank">
+        <img src="Instagram LOGO.png" alt="Instagram Social Media Logo" class="ig">
+    </a>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li class="dropdown">
+                <a href="#prospectsboard" class="dropbtn">PROFILES</a>
+                <div class="dropdown-content">
+                    <a href="#players">Players Get Scouted</a>
+                    <a href="#collegecoaches">College Coaches</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#rankings" class="dropbtn">RANKINGS</a>
+                <div class="dropdown-content">
+                    <a href="#howwerank">How We Rank</a>
+                    <a href="#toprankings">Top Rankings</a>
+                </div>
+            </li>
+            <li><a href="#aboutus">ABOUT US</a></li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    .container {
+        width: 100%;
+        background-color: black; /* Black rectangle */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .container a img {
+        height: 40px; /* Adjust logo size */
+        width: auto;
+        margin: 0 10px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        padding: 20px 30px;
+        text-decoration: none;
+        transition: background-color 0.2s;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        width: 150px;
+        text-align: center;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        font-size: 16px;
+        color: black;
+        padding: 10px 0;
+        text-decoration: none;
+        display: block;
+    }
+
+    .navbar a:hover {
+        background-color: #A7ABAA;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: gold;
+    }
+</style>
+
+
 <!-- MAIN (Center website) -->
 <div class="main">
 
@@ -151,7 +346,7 @@ h4 {
   <div class="column NCAA D1 FBS">
     <div class="content">
       <img src="Texas Tech.webp
-" alt="Texas Tech Logo" style="width:85.5%">
+" alt="Texas Tech Logo" style="width:75%">
       <h4>TEXAS TECH
 </h4>
     </div>
@@ -432,7 +627,7 @@ Logo" style="width:100%">
   </div>
   <div class="column NCAA D1 FCS">
     <div class="content">
-      <img src="Southern Illinois Carbondale.avif" alt="Southern Illinois Carbondale Logo" style="width:100%">
+      <img src="SIUC.png" alt="Southern Illinois Carbondale Logo" style="width:100%">
       <h4>SOUTHERN ILLINOIS CARBONDALE</h4>
     </div>
   </div>
@@ -441,19 +636,19 @@ Logo" style="width:100%">
 <div class="row">
   <div class="column NCAA D1 FCS">
     <div class="content">
-      <img src="South Dakota State.avif" alt="South Dakota State University Logo" style="width:100%">
+      <img src="South Dakota State.png" alt="South Dakota State University Logo" style="width:100%">
       <h4>SOUTH DAKOTA STATE UNIVERSITY</h4>
     </div>
   </div>
   <div class="column NCAA D1 FCS">
     <div class="content">
-      <img src="Harvard.avif" alt="Harvard University Logo" style="width:100%">
+      <img src="Hardvard.png" alt="Harvard University Logo" style="width:130%">
       <h4>HARVARD UNIVERSITY</h4>
     </div>
   </div>
   <div class="column NCAA D1 FCS">
     <div class="content">
-      <img src="Idaho.avif" alt="University of Idaho Logo" style="width:100%">
+      <img src="Vandals.png" alt="University of Idaho Logo" style="width:100%">
       <h4>UNIVERSITY OF IDAHO</h4>
     </div>
   </div>
@@ -462,7 +657,7 @@ Logo" style="width:100%">
 <div class="row">
   <div class="column NCAA D1 FCS">
     <div class="content">
-      <img src="Valparaiso.avif" alt="Valparaiso University Logo" style="width:100%">
+      <img src="Valpo.webp" alt="Valparaiso University Logo" style="width:100%">
       <h4>VALPARAISO UNIVERSITY</h4>
     </div>
   </div>
@@ -474,7 +669,7 @@ Logo" style="width:100%">
   </div>
   <div class="column NCAA D1 FCS">
     <div class="content">
-      <img src="NDSU.avif" alt="North Dakota State University Logo" style="width:100%">
+      <img src="NDSU.jpg" alt="North Dakota State University Logo" style="width:100%">
       <h4>NORTH DAKOTA STATE UNIVERSITY</h4>
     </div>
   </div>
@@ -484,7 +679,7 @@ Logo" style="width:100%">
   <div class="column NCAA D1 FCS">
     <div class="content">
       <img src="William & Mary.avif" alt="William & Mary Logo" style="width:100%">
-      <h4>WILLIAM & MARY</h4>
+      <h4>WILLIAM &amp; MARY</h4>
     </div>
   </div>
   <div class="column NCAA D1 FCS">
@@ -510,7 +705,7 @@ Logo" style="width:100%">
   </div>
   <div class="column NCAA D1 FCS">
     <div class="content">
-      <img src="University Of Montana.avif" alt="University of Montana Logo" style="width:100%">
+      <img src="U Montana.png" alt="University of Montana Logo" style="width:100%">
       <h4>UNIVERSITY OF MONTANA</h4>
     </div>
   </div>
@@ -525,7 +720,7 @@ Logo" style="width:100%">
 <div class="row">
   <div class="column NCAA D1 FCS">
     <div class="content">
-      <img src="Drake University.avif" alt="Drake University Logo" style="width:100%">
+      <img src="Drake.png" alt="Drake University Logo" style="width:100%">
       <h4>DRAKE UNIVERSITY</h4>
     </div>
   </div>
@@ -629,7 +824,7 @@ Logo" style="width:100%">
   </div>
   <div class="column NCAA D2">
     <div class="content">
-      <img src="Saint Anselm.avif" alt="Saint Anselm
+      <img src="Saint Anselm.png" alt="Saint Anselm
 Logo" style="width:100%">
       <h4>SAINT ANSELM</h4>
     </div>
@@ -652,7 +847,7 @@ Logo" style="width:100%">
   </div>
   <div class="column NCAA D2">
     <div class="content">
-      <img src="Washburn.avif" alt="Washburn Logo" style="width:100%">
+      <img src="Washburn.png" alt="Washburn Logo" style="width:100%">
       <h4>WASHBURN</h4>
     </div>
   </div>
@@ -681,8 +876,7 @@ Lincoln University Missouri Logo" style="width:100%">
   </div>
   <div class="column NCAA D2">
     <div class="content">
-      <img src="Central Missouri.avif" alt="
-Central University Missouri Logo" style="width:100%">
+      <img src="UCM.png" alt="Central University Missouri Logo" style="width:100%">
       <h4>CENTRAL UNIVERSITY MISSOURI</h4>
     </div>
   </div>
@@ -690,7 +884,8 @@ Central University Missouri Logo" style="width:100%">
  <div class="row">
   <div class="column NCAA D2">
     <div class="content">
-      <img src="AIC.avif" alt="American International College Logo" style="width:100%">
+      <img src="AIC.png"
+           alt="American International College Logo" style="width:100%">
       <h4>AMERICAN INTERNATIONAL COLLEGE</h4>
     </div>
   </div>
@@ -700,7 +895,7 @@ Central University Missouri Logo" style="width:100%">
 <div class="row">
   <div class="column U_SPORTS_CANADA">
     <div class="content">
-      <img src="University of Windsor.avif" alt="University of Windsor Logo" style="width:100%">
+      <img src="Windsor.png" alt="University of Windsor Logo" style="width:70%">
       <h4>UNIVERSITY OF WINDSOR</h4>
     </div>
   </div>
@@ -714,7 +909,7 @@ Central University Missouri Logo" style="width:100%">
   
   <div class="column U_SPORTS_CANADA">
     <div class="content">
-      <img src="Carleton.avif" alt="Carleton University Logo" style="width:100%">
+      <img src="Ravens.png" alt="Carleton University Logo" style="width:100%">
       <h4>CARLETON UNIVERSITY</h4>
     </div>
   </div>
@@ -730,7 +925,7 @@ Central University Missouri Logo" style="width:100%">
   
   <div class="column U_SPORTS_CANADA">
     <div class="content">
-      <img src="University of Guelph .avif" alt="University of Guelph Logo" style="width:100%">
+      <img src="Guelph.png" alt="University of Guelph Logo" style="width:100%">
       <h4>UNIVERSITY OF GUELPH</h4>
     </div>
   </div>
@@ -760,7 +955,7 @@ Central University Missouri Logo" style="width:100%">
   
   <div class="column U_SPORTS_CANADA">
     <div class="content">
-      <img src="University of Regina.avif" alt="University of Regina Logo" style="width:100%">
+      <img src="University of Regina.avif" alt="University of Regina Logo" style="width:90%">
       <h4>UNIVERSITY OF REGINA</h4>
     </div>
   </div>
@@ -769,7 +964,7 @@ Central University Missouri Logo" style="width:100%">
 <div class="row">
   <div class="column U_SPORTS_CANADA">
     <div class="content">
-      <img src="Western University.avif" alt="Western University Logo" style="width:100%">
+      <img src="Western.png" alt="Western University Logo" style="width:100%">
       <h4>WESTERN UNIVERSITY</h4>
     </div>
   </div>
@@ -852,7 +1047,7 @@ Central University Missouri Logo" style="width:100%">
   </div>
   <div class="column NCAA_D3">
     <div class="content">
-      <img src="Alfred University.avif" alt="Alfred University Logo" style="width:100%">
+      <img src="Alfred.png" alt="Alfred University Logo" style="width:100%">
       <h4>ALFRED UNIVERSITY</h4>
     </div>
   </div>
@@ -982,6 +1177,7 @@ Central University Missouri Logo" style="width:100%">
   </div>
 </div>
 
+  
 <!-- END MAIN -->
 
 <script>
