@@ -233,21 +233,25 @@ Date retrieved: [March 29]
 
     }
 
-    .row {
-      margin: 0px; /* Add vertical spacing between rows */
-    }
-
+    
     /* Add padding BETWEEN each column */
     .row > .column {
-      padding: 8px; /* Padding for separation within the row */
+      padding: 8px; 
     }
 
-    /* Create three equal columns that floats next to each other */
-    .column {
-      float: left;
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+  }
+
+   .column {
+      flex: 1;
+      padding: 8px;
+      display: block;
       width: 33.33%;
-      display: none; /* Hide all elements by default */
-    }
+      box-sizing: border-box;
+  }
 
     /* Clear floats after rows */ 
     .row:after {
@@ -273,14 +277,16 @@ Date retrieved: [March 29]
       object-fit: contain;
       margin-top: 20px; 
       margin-bottom: 10px;
+      display: block;
+
     }
 
-    /* The "show" class is added to the filtered elements */
+  
     .show {
       display: block;
     }
 
-    /* Style the buttons */
+  
     .btn {
       border: none;
       outline: none;
@@ -642,11 +648,11 @@ Logo" style="width:100%">
   
   <div class="column NCAA D1 FBS">
     <div class="content">
-      <img src="University of Minnesota.png" alt="University of Minnesota Logo" style="width:50%">
+      <img src="U Min.png" alt="University of Minnesota Logo" style="width:100%"> 
       <h4>UNIVERSITY OF MINNESOTA</h4>
     </div>
-  </div>
 </div>
+
 
 <!-- NCAA D1 FCS -->
 
@@ -781,20 +787,18 @@ Logo" style="width:100%">
 <div class="row">
   <div class="column NCAA D1 FCS">
     <div class="content">
-      <img src="Drake.png" alt="Drake University Logo" style="width:100%">
-      <h4>DRAKE UNIVERSITY</h4>
+      <img src="Drake.png" alt="Drake Logo" style="width:100%">
+      <h4>DRAKE</h4>
     </div>
   </div>
-</div>
-
-<div class="row">
   <div class="column NCAA D1 FCS">
     <div class="content">
       <img src="Delaware State.png" alt="Delaware State Logo" style="width:100%">
       <h4>DELAWARE STATE</h4>
     </div>
   </div>
-</div>
+  
+
   
 
 
